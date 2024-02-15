@@ -2,7 +2,7 @@ def sum(a, b, c ):
     return a + b + c
 
 
-def printBoard(playerX, playerY):
+def printBoard(playerY, playerX):
     zero = 'X' if playerX[0] else ('O' if playerY[0] else 0)
     one = 'X' if playerX[1] else ('O' if playerY[1] else 1)
     two = 'X' if playerX[2] else ('O' if playerY[2] else 2)
@@ -23,7 +23,7 @@ def checkwinner(playerX, playerY):
     wins = [[0, 1, 2], [3, 4, 5], [6, 7, 8],[0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
     for win in wins:
         if(sum(playerX[win[0]], playerX[win[1]], playerX[win[2]]) == 3):
-            print("Player X has won the game")
+            print("Player Y has won the game")
             return 1
         if(sum(playerY[win[0]], playerY[win[1]], playerY[win[2]]) == 3):
             print("Player Y has won the game")
