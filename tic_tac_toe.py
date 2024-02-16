@@ -52,5 +52,5 @@ if __name__ == "__main__":
             print("Match Over")
             break
 
-        turn = 1 - turn
+        turn = turn - 1
                 
