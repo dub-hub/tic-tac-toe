@@ -9,7 +9,7 @@ def printBoard(playerY, playerX):
     three = 'X' if playerX[3] else ('O' if playerY[3] else 3)
     four = 'X' if playerX[4] else ('O' if playerY[4] else 4)
     five = 'X' if playerX[5] else ('O' if playerY[5] else 5)
-    six = 'X' if playerX[5] else ('O' if playerY[6] else 6)
+    six = 'X' if playerX[6] else ('O' if playerY[6] else 6)
     seven = 'X' if playerX[7] else ('O' if playerY[7] else 7)
     eight = 'X' if playerX[8] else ('O' if playerY[8] else 8)
     print(f"| {zero} | {one} | {two}  |")
